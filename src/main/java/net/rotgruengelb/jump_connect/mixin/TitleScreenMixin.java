@@ -8,7 +8,6 @@ import net.minecraft.client.network.ServerAddress;
 import net.minecraft.client.network.ServerInfo;
 import net.minecraft.client.resource.language.I18n;
 import net.minecraft.text.Text;
-import net.rotgruengelb.jump_connect.Jump_Connect;
 import net.rotgruengelb.jump_connect.config.ModConfigModel;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -27,7 +26,7 @@ public class TitleScreenMixin extends Screen {
 
 	@Unique
 	private void connect(String address, ModConfigModel.ResourcePackPolicy resourcePackPolicy) {
-		ServerInfo info = new ServerInfo(I18n.translate("selectServer.defaultName"), address, false);
+		ServerInfo info = new ServerInfo(I18n.translate("selectServer.defaultName"), address, ServerInfo.ServerType.OTHER);
 
 		switch (resourcePackPolicy) {
 			case ALLOW -> info.setResourcePackPolicy(ServerInfo.ResourcePackPolicy.ENABLED);
