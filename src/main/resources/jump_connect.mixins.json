@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "net.rotgruengelb.jump_connect.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "TitleScreenMixin"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "jump_connect",
+	"version": "${version}",
+	"name": "Jump_Connect",
+	"description": "Quickly join a configurable server by holding Alt/Ctrl/Shift Key whilst clicking on the Multiplayer Button in the Main Menu.",
+	"authors": [
+		"rotgruengelb"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/jump_connect",
+		"sources": "https://github.com/rotgruengelb/jump_connect"
+	},
+	"license": "MIT",
+	"icon": "assets/jump_connect/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"net.rotgruengelb.jump_connect.Jump_Connect"
+		]
+	},
+	"mixins": [
+		"jump_connect.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.0",
+		"minecraft": "1.20.1",
+		"java": ">=17",
+		"owo-lib": "0.11.X+1.20"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}

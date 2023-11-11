@@ -1,0 +1,15 @@
+{
+  "text.config.jump_connect.option.alt_key.address": "Server Address:",
+  "text.config.jump_connect.option.alt_key.resourcePackPolicy": "ResourcePackPolicy:",
+  "text.config.jump_connect.option.control_key.address": "Server Address:",
+  "text.config.jump_connect.option.control_key.resourcePackPolicy": "ResourcePackPolicy:",
+  "text.config.jump_connect.option.shift_key.address": "Server Address:",
+  "text.config.jump_connect.option.shift_key.resourcePackPolicy": "ResourcePackPolicy:",
+  "text.config.jump_connect.enum.resourcePackPolicy.allow": "ALLOW/Enabled",
+  "text.config.jump_connect.enum.resourcePackPolicy.deny": "DENY/Disabled",
+  "text.config.jump_connect.enum.resourcePackPolicy.prompt": "PROMPT/Ask",
+  "text.config.jump_connect.title": "Set Addresses and ResourcePackPolices to apply when holding\nALT/CONTROL/SHIFT whilst clicking on the Multiplayer Button.",
+  "text.config.jump_connect.category.alt_key": "ALT/Alt Key",
+  "text.config.jump_connect.category.control_key": "CONTROL/Ctrl Key",
+  "text.config.jump_connect.category.shift_key": "SHIFT/⇧Shift Key"
+}
