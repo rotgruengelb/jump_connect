@@ -11,9 +11,5 @@ public class Jump_Connect implements ClientModInitializer {
     public static final ModConfig CONFIG = ModConfig.createAndLoad();
 
     @Override
-    public void onInitializeClient() {
-
-        LOGGER.info("Hello Fabric world!");
-
-    }
+    public void onInitializeClient() { }
 }
