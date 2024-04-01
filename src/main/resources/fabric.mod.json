@@ -9,7 +9,8 @@
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/jump_connect",
-		"sources": "https://github.com/rotgruengelb/jump_connect"
+		"sources": "https://github.com/rotgruengelb/jump_connect",
+		"issues": "https://github.com/rotgruengelb/jump_connect/issues"
 	},
 	"license": "MIT",
 	"icon": "assets/jump_connect/icon.png",
@@ -23,10 +24,10 @@
 		"jump_connect.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.14.0",
-		"minecraft": "1.20.1",
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "${minecraft_version}",
 		"java": ">=17",
-		"owo-lib": "0.11.X+1.20"
+		"owo-lib": ">=${owo_version}"
 	},
 	"suggests": {
 		"modmenu": "*"
