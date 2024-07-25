@@ -23,7 +23,6 @@ public class TitleScreenMixin extends Screen {
 		super(title);
 	}
 
-
 	@Unique
 	private void connect(String address, ModConfigModel.ResourcePackPolicy resourcePackPolicy) {
 		ServerInfo info = new ServerInfo(I18n.translate("selectServer.defaultName"), address, ServerInfo.ServerType.OTHER);
@@ -34,19 +33,16 @@ public class TitleScreenMixin extends Screen {
 			case PROMPT -> info.setResourcePackPolicy(ServerInfo.ResourcePackPolicy.PROMPT);
 		}
 
-		ConnectScreen.connect(this, MinecraftClient.getInstance(), ServerAddress.parse(info.address), info, false);
+		ConnectScreen.connect(this, MinecraftClient.getInstance(), ServerAddress.parse(info.address), info, false, null);
 	}
 
 	@Inject(at = @At("TAIL"), method = "onMultiplayerButtonPressed")
-	private void onMultiplayerButtonPressed(CallbackInfo callbackInfo)
-	{
+	private void onMultiplayerButtonPressed(CallbackInfo callbackInfo) {
 		if (Screen.hasAltDown()) {
 			connect(CONFIG.alt_key.address(), CONFIG.alt_key.resourcePackPolicy());
-		}
-		else if (Screen.hasControlDown()) {
+		} else if (Screen.hasControlDown()) {
 			connect(CONFIG.alt_key.address(), CONFIG.control_key.resourcePackPolicy());
-		}
-		else if (Screen.hasShiftDown()) {
+		} else if (Screen.hasShiftDown()) {
 			connect(CONFIG.shift_key.address(), CONFIG.shift_key.resourcePackPolicy());
 		}
 	}

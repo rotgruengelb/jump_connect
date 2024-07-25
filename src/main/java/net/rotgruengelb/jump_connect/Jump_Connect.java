@@ -6,10 +6,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Jump_Connect implements ClientModInitializer {
-    public static final Logger LOGGER = LoggerFactory.getLogger("jump_connect");
+	public static final Logger LOGGER = LoggerFactory.getLogger("jump_connect");
 
-    public static final ModConfig CONFIG = ModConfig.createAndLoad();
+	public static final ModConfig CONFIG = ModConfig.createAndLoad();
 
-    @Override
-    public void onInitializeClient() { }
+	@Override
+	public void onInitializeClient() { }
 }
